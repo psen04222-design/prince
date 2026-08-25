@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links & Gaming Hub</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card-bg: #1a1d26;
+      --card-hover: #242938;
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.25);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: #2e3446;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+
+    /* Profile Header */
+    .profile {
+      text-align: center;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 20px var(--accent-glow);
+      margin-bottom: 12px;
+    }
+
+    .profile h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .profile p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    /* Section Styles */
+    .section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+      padding-left: 4px;
+    }
+
+    /* Links / Cards */
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background-color: var(--card-bg);
+      color: var(--text-main);
+      text-decoration: none;
+      padding: 14px 18px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .link-card:hover {
+      background-color: var(--card-hover);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+
+    .icon {
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+    }
+
+    .link-details {
+      flex: 1;
+    }
+
+    .link-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .link-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .arrow {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      transition: transform 0.2s ease;
+    }
+
+    .link-card:hover .arrow {
+      color: var(--text-main);
+      transform: translateX(3px);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: auto;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <!-- Profile -->
+    <header class="profile">
+      <img src=""C:\Users\prince\Downloads\669558669650372720.jfif"" alt="Avatar" class="avatar" />
+      <h1>PRINCE NOT</h1>
+      <p>Content Creator & Gamer</p>
+    </header>
+
+    <!-- Social Media Section -->
+    <section class="section">
+      <h2 class="section-title">Socials</h2>
+
+      <a href="https://www.instagram.com/gg_p4rince_sen?igsi=NWd3eWl5a2R0bnp2" target="_blank" rel="noopener noreferrer" class="link-card">
+        <span class="icon">▶️</span>
+        <div class="link-details">
+          <div class="link-title">YouTube</div>
+          <div class="link-subtitle">Subscribe for gameplay & guides</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a href="https://www.instagram.com/gg_p4rince_sen?igsi=NWd3eWl5a2R0bnp2"_blank" rel="noopener noreferrer" class="link-card">
+        <span class="icon">📸</span>
+        <div class="link-details">
+          <div class="link-title">Instagram</div>
+          <div class="link-subtitle">Daily updates & highlights</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="link-card">
+        <span class="icon">💬</span>
+        <div class="link-details">
+          <div class="link-title">Discord Community</div>
+          <div class="link-subtitle">Join the chat & game nights</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+
+    <!-- Gaming Section -->
+    <section class="section">
+      <h2 class="section-title">Gaming & Mods</h2>
+
+      <a href="https://steamcommunity.com" target="_blank" rel="noopener noreferrer" class="link-card">
+        <span class="icon">🎮</span>
+        <div class="link-details">
+          <div class="link-title">Game Profile / ID</div>
+          <div class="link-subtitle">View stats & loadouts</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link-card">
+        <span class="icon">📦</span>
+        <div class="link-details">
+          <div class="link-title">Custom Game Tools / Hub</div>
+          <div class="link-subtitle">Download configs & scripts</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </section>
+
+    <footer>
+      <p>© 2026 • All Rights Reserved</p>
+    </footer>
+  </main>
+
+</body>
+</html>
